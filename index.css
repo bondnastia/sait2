@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header{ 
+    min-height: 40px;
+    background-color:#8C5F66;
+    position: fixed;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}
+.about img:hover{
+    transform: scale(1.2) rotate(5deg);
+}
+.menu{  
+display: flex;
+flex-flow: row;
+list-style: none;
+color: #fff;
+margin: 0 auto;
+padding: 0;
+justify-content: space-around;
+}
+.menu li{
+padding: 10px;
+}
+.name{
+    display: block;
+    margin-right: auto;
+}
+.about{
+    height: 100%;
+    background-image: url(http://placeimg.com/1000/400/nature);
+    background-size: cover;
+    height: 350px;
+    text-align: center;
+    padding: 8px;
+   padding-top: 80px;
+    
+}
+.about img{
+    border-radius: 50%;
+    transition: all .5s;
+    height: 130px;
+    width: 120px;
+}
+h1{
+    color: #ffff;
+}
+.tag{
+    background-color: #CB769E;
+    display: table;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 30s ease;
+}
+.animation:hover{
+    padding: 15px;
+    background:#b39fb5;
+}
+.sub-title{
+    background-color:#E09891;
+    color: #fff;
+}
+ .tag-list{
+     display: flex;
+     flex-flow:row;
+     list-style: none;
+ }
+.content{
+    display: flex;
+    flex-flow: row;
+    margin: 5px auto;
+    background: #fff;
+    padding: 0 auto;
+}
+.content .card h2{
+    text-align: center;
+    margin: 5px;
+} 
+.card{
+    height: 200px;
+    width: 320px;
+    background: #E09891;
+    left: 0; 
+    right: 0;
+    margin: 0 auto;
+    margin-top: 11px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+}
+.text{
+  padding: 4px;
+  color: #fff;
+}
+.biografy{
+    display: flex;
+    justify-content: flex-start;
+    background:#9ae9ed;
+    position: relative;
+   
+}
+.img3{
+	position:relative;
+	top: 5;
+}
+
+.biografy p{
+    font-family: cursive;
+        position: absolute;
+        padding-top: 70px;
+        right:0;
+        font-size: 20px;
+        width: 500px;
+        color: #fff;
+        margin: 35px;
+    }
+.biografy h1{
+    font-family: cursive;
+        position: absolute;
+        right:0;
+        width: 350px;  
+        height: 40px;
+        font-size: 40px;
+        color: #fff;
+    }
+.image-relative:hover .overlay{
+     display: flex;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 680px;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.overlay h2{
+    text-align: center;
+    color:white;
+}
+.biografia{
+    display: flex;
+    justify-content: flex-end;
+    background:#9ae9ed;
+    position: relative;
+}
+
+
+/* .image-relative{
+    position: relative;
+} */
+.biografia h1{
+font-family: cursive;
+    position: absolute;
+    left: 0;
+    margin-left:35px;
+    width: 200px;  
+    height: 40px;
+    font-size: 40px;
+    color: #fff;
+}
+footer{
+    text-align: center;
+    padding: 50px;
+    background-color: #A5C882;
+    width: 100%;
+    bottom: 0;
+}
+.inst img{
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+}
+.inst{
+    margin: auto;
+     position: absolute;
+      line-height: 40px;
+      top: calc(100%-20px);
+      margin-left: -90px;
+    }
+.instagram{
+    float: left;
+}
+
+footer a p{
+    display: inline-block; 
+    float: left; 
+    margin: 0;
+}
+
+@media (max-width:320px)
+{
+    .card{
+      font-size: 11px;
+        height: 168px;
+        width: 150px;
+        background: #E09891;
+        left: 0; 
+        right: 0;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius:10px;
+        border-bottom: 3px solid grey;
+        border-right: 3px solid grey;
+    }
+    footer{
+        text-align: center;
+        padding: 30px;
+        background-color: #A5C882;
+        width: 100%;
+        bottom: 0;
+    } 
+    .inst{
+        margin: auto;
+         position: absolute;
+          line-height: 40px;
+          top: calc(50%-40px);
+          margin-left: -90px;
+          margin-top:-18px;
+        }
+}
